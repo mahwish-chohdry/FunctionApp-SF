@@ -43,7 +43,7 @@ namespace HubEvent.Function
         private static ILogger logger;
 
         //private static SqlConnection  connection;
-        [FunctionName("EventHubTriggerCSharp")]
+        [FunctionName("IOTHubTriggerCSharp")]
         public static async Task Run([EventHubTrigger("instanceterraform", Connection = "Connectionstring")] EventData[] events, ILogger log)
         {
             logger = log;
